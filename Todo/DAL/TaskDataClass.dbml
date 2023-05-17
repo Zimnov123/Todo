@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TODOAPP" Class="TaskDataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-17R2CEA\SQLEXPRESS;Initial Catalog=TODOAPP;Integrated Security=True" SettingsObjectName="Todo.Properties.Settings" SettingsPropertyName="TODOAPPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TASK" Member="TASKs">
+    <Type Name="TASK">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Task" Member="Task1" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TASKSTATUS" Member="TASKSTATUS">
+    <Type Name="TASKSTATUS">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

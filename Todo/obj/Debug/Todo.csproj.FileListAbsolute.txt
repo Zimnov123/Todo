@@ -1,0 +1,13 @@
+D:\github\eleks\Todo\Todo\bin\Debug\Todo.exe.config
+D:\github\eleks\Todo\Todo\bin\Debug\Todo.exe
+D:\github\eleks\Todo\Todo\bin\Debug\Todo.pdb
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.csproj.AssemblyReference.cache
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.csproj.SuggestedBindingRedirects.cache
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.Properties.Resources.resources
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.csproj.GenerateResource.cache
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.csproj.CoreCompileInputs.cache
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.exe
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.pdb
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.FrmDeleted.resources
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.FrmMain.resources
+D:\github\eleks\Todo\Todo\obj\Debug\Todo.FrmAdd.resources
