@@ -14,15 +14,25 @@ namespace Todo.BLL
         {
             TaskDAO.AddTask(task);
         }
-
         public static List<TASK> GetTask()
-        {
+        {           
             return TaskDAO.GetTask();
         }
-
-        public static void DeleteTask(int Id)
+        public static void DeletedTask(int taskID, int deleted)
         {
-            TaskDAO.DeleteTask(Id);
+            TaskDAO.DeletedTask(taskID, deleted);
+        }
+        public static void AppointeTask(int taskID, int appointed)
+        {
+            TaskDAO.AppointeTask(taskID, appointed);
+        }
+        public static void DeleteTask(int taskID)
+        {
+            TaskDAO.DeleteTask(taskID);
+        }
+        public static void CompleteTask(int iD, int completed)
+        {
+            TaskDAO.CompleteTask(iD, completed);
         }
     }
 }

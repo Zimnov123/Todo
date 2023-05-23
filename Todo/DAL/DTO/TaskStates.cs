@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Todo.DAL.DTO
 {
-    public class TaskDTO
+    public class TaskStates
     {
-        public int ID { get; set; }
-        public string Task { get; set; }
-        public int TaskState { get; set; }
+        public static int Appointed = 1;
+        public static int Deleted = 2;
+        public static int Completed = 3;
     }
 }

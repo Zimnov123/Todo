@@ -95,6 +95,8 @@ namespace Todo.DAL
 		
 		private string _Task1;
 		
+		private int _TaskState;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -103,6 +105,8 @@ namespace Todo.DAL
     partial void OnIdChanged();
     partial void OnTask1Changing(string value);
     partial void OnTask1Changed();
+    partial void OnTaskStateChanging(int value);
+    partial void OnTaskStateChanged();
     #endregion
 		
 		public TASK()
@@ -146,6 +150,26 @@ namespace Todo.DAL
 					this._Task1 = value;
 					this.SendPropertyChanged("Task1");
 					this.OnTask1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TaskState", DbType="Int NOT NULL")]
+		public int TaskState
+		{
+			get
+			{
+				return this._TaskState;
+			}
+			set
+			{
+				if ((this._TaskState != value))
+				{
+					this.OnTaskStateChanging(value);
+					this.SendPropertyChanging();
+					this._TaskState = value;
+					this.SendPropertyChanged("TaskState");
+					this.OnTaskStateChanged();
 				}
 			}
 		}
