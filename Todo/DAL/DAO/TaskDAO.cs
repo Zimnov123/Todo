@@ -22,17 +22,16 @@ namespace Todo.DAL.DAO
                 throw ex;
             }
         }
-
         public static List<TASK> GetTask()
         {
             return db.TASKs.ToList();
         }
-        public static void DeleteTask(int id)
+        public static void CompleteTask(int iD, int completed)
         {
             try
             {
-                TASK task = db.TASKs.First(x => x.Id == id);
-                db.TASKs.DeleteOnSubmit(task);
+                TASK status = db.TASKs.First(x => x.Id == iD);
+                status.TaskState = completed;
                 db.SubmitChanges();
             }
             catch (Exception ex)
@@ -40,6 +39,41 @@ namespace Todo.DAL.DAO
 
                 throw ex;
             }
+        }
+        public static void DeletedTask(int iD, int deleted)
+        {
+            try
+            {
+                TASK status = db.TASKs.First(x => x.Id == iD);
+                status.TaskState = deleted;
+                db.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        public static void AppointeTask(int iD, int appointed)
+        {
+            try
+            {
+                TASK status = db.TASKs.First(x => x.Id == iD);
+                status.TaskState = appointed;
+                db.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public static void DeleteTask(int taskID)
+        {
+                TASK task = db.TASKs.First(x => x.Id == taskID);
+                db.TASKs.DeleteOnSubmit(task);
+                db.SubmitChanges();
         }
     }
 }

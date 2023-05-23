@@ -50,10 +50,12 @@
     <Compile Include="BLL\TaskBLL.cs" />
     <Compile Include="DAL\DAO\TaskContext.cs" />
     <Compile Include="DAL\DAO\TaskDAO.cs" />
+    <Compile Include="DAL\DTO\TaskDetailDTO.cs" />
     <Compile Include="DAL\DTO\TaskDTO.cs" />
+    <Compile Include="DAL\DTO\TaskStates.cs" />
     <Compile Include="DAL\TaskDataClass.designer.cs">
-      <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
       <DependentUpon>TaskDataClass.dbml</DependentUpon>
     </Compile>
     <Compile Include="FrmAdd.cs">
