@@ -19,7 +19,6 @@ namespace Todo
             InitializeComponent();
         }
         TaskDTO dto = new TaskDTO();
-        TaskBLL bll = new TaskBLL();
         List<TASK> list = new List<TASK>();
         private void Form1_Load(object sender, EventArgs e)
         {

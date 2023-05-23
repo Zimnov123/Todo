@@ -14,7 +14,6 @@ namespace Todo.BLL
         {
             TaskDAO.AddTask(task);
         }
-
         public static List<TASK> GetTask()
         {           
             return TaskDAO.GetTask();
@@ -31,7 +30,6 @@ namespace Todo.BLL
         {
             TaskDAO.DeleteTask(taskID);
         }
-
         public static void CompleteTask(int iD, int completed)
         {
             TaskDAO.CompleteTask(iD, completed);

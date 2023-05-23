@@ -75,7 +75,6 @@
             this.txtTask.Name = "txtTask";
             this.txtTask.Size = new System.Drawing.Size(351, 202);
             this.txtTask.TabIndex = 0;
-            this.txtTask.TextChanged += new System.EventHandler(this.txtTask_TextChanged);
             // 
             // FrmAdd
             // 

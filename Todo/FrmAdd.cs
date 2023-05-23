@@ -20,7 +20,6 @@ namespace Todo
             InitializeComponent();
         }
         TASK dto = new TASK();
-        TaskDetailDTO detail = new TaskDetailDTO();
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -46,11 +45,6 @@ namespace Todo
                 MessageBox.Show("Task was added");
                 txtTask.Clear();
             }
-        }
-
-        private void txtTask_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
